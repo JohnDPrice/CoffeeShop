@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coffee Shop</title>
+</head>
+<body>
+   <button id="run-button">Run It!</button>
+   <button id="coffee-menu">Coffee Menu</button>
+   <h3>Add Coffee</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addCoffee()">
+        <input type="text" id="coffee-title" value ="Title" placeholder="New Coffee">
+        <input type ="text" id="bean-variety-id" value ="Coffee" placeeholder="Bean Variety Id">
+        <input type="submit" value="Add">
+    </form>
+    <div id="editForm">
+        <h3>Edit</h3>
+        <form action="javascript:void(0);" onsubmit="updateCoffee()">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="edit-title">
+            <input type="hidden" id="edit-bean-variety-id">
+            <input type="submit" value="Save">
+        </form>
+    </div>
+   <script src="main.js"></script>
+</body>
+</html>
